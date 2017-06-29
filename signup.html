@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign up</title>
+  <meta name="description" content="Sign up">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="images/logo.png" alt="Company Logo">
+  </header>
+
+  <form class="signup-form" action="/signup/" method="post">
+    <fieldset class="user-info">
+      <legend>Sign up</legend>
+      <label for="user-email">Email</label>
+      <input type="email" name="user-email" id="user-email" placeholder="  foo@bar.com" required/>
+      <label for="user-password">Password</label>
+      <input type="password" name="user-password" id="user-password" placeholder=" 1234passw0rd" required/>
+      <button type="submit">Sign up</button>
+    </fieldset>
+    <p>
+      <a href="/forgot-password/new">Forgot password?</a>
+    </p>
+  </form>
+
+  <footer>
+    <p>Already have an account?<a href="/login"> Log In</a></p>
+  </footer>
+
+</body>
